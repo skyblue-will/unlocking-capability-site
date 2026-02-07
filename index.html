@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unlocking Capability | Will Palmer</title>
+    <meta name="description" content="The product is not the UI. It never was. On capability layers, post-product, and the future of building.">
+    <meta property="og:title" content="Unlocking Capability">
+    <meta property="og:description" content="The product is not the UI. It never was.">
+    <meta property="og:type" content="article">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Unlocking Capability">
+    <meta name="twitter:description" content="The product is not the UI. It never was.">
+    <style>
+        :root {
+            --text: #1a1a1a;
+            --text-secondary: #666;
+            --bg: #fafafa;
+            --accent: #0066cc;
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --text: #e8e8e8;
+                --text-secondary: #999;
+                --bg: #121212;
+                --accent: #4da6ff;
+            }
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.7;
+            color: var(--text);
+            background: var(--bg);
+            font-size: 18px;
+        }
+        
+        article {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 4rem 1.5rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+        }
+        
+        .byline {
+            color: var(--text-secondary);
+            margin-bottom: 3rem;
+            font-size: 1rem;
+        }
+        
+        .byline a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        
+        .byline a:hover {
+            text-decoration: underline;
+        }
+        
+        .lede {
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+            line-height: 1.5;
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+        }
+        
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            letter-spacing: -0.01em;
+        }
+        
+        strong {
+            font-weight: 600;
+        }
+        
+        hr {
+            border: none;
+            border-top: 1px solid var(--text-secondary);
+            opacity: 0.3;
+            margin: 3rem 0;
+        }
+        
+        .closing {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--text-secondary);
+            opacity: 0.8;
+        }
+        
+        .closing p {
+            font-size: 1rem;
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>Unlocking Capability</h1>
+        <p class="byline">By <a href="https://www.linkedin.com/in/willpalmeruk/">Will Palmer</a></p>
+        
+        <p class="lede">The product is not the UI. It never was.</p>
+        
+        <p>The product is the capability: the data model, the business logic, the API. The UI was just a delivery mechanism for humans who couldn't access capability directly.</p>
+        
+        <p>Agents don't need that delivery mechanism. They mainline into APIs, CLIs, databases. The visual layer adds nothing for them.</p>
+        
+        <p>This changes everything about how we build, who can build, and what "product" even means.</p>
+        
+        <hr>
+        
+        <h2>The Human Accommodation</h2>
+        
+        <p>User interfaces exist because humans need them. A UI is a cognitive prosthetic. It offloads executive function, organises information visually, provides a preference interface into underlying data. The screen, the button, the form field: accommodations for how human minds work.</p>
+        
+        <p>Agents don't need this accommodation. This reveals something that was always true but easy to miss: the interface was never the product. It was the wrapper.</p>
+        
+        <h2>Post-Product</h2>
+        
+        <p>I've been talking about "post-product" for nearly a year. Here's what it actually means.</p>
+        
+        <p>SaaS products bundle three things: capability (what it does), data (what it knows), and interface (how humans access it). Companies competed on how well they executed the bundle.</p>
+        
+        <p>In a world where agents access capability directly and generate interfaces on demand, the bundle falls apart.</p>
+        
+        <p>The capability layer becomes the product. Or rather, what replaces it. APIs, data models, business logic. The stuff that actually does things, stripped of any particular human interface.</p>
+        
+        <p>UIs become ephemeral. Generated when a human needs one. Dissolved when they're done. Not designed once and shipped, but conjured on demand.</p>
+        
+        <hr>
+        
+        <h2>What Replaces It</h2>
+        
+        <p>If agents handle execution, what do humans do?</p>
+        
+        <p>Every word I type is multiplied by the agent. My vocabulary, my ability to set clear direction: these determine what gets built. Not prompt engineering. The conceptual clarity to navigate and shape the capability layer itself.</p>
+        
+        <p>The shift is from procedural to conceptual. Not "how do I write this syntax" but "what exists in the solution space."</p>
+        
+        <p>A builder needs to know that migrations exist as a concept, that SQL injection is a threat category, that APIs have authentication. They don't need to implement these things. They need to know they're the things to ask for.</p>
+        
+        <p>This makes computer science more important, not less. Not the syntax of any particular language, but the mental models: state, concurrency, authentication versus authorisation, idempotency, race conditions.</p>
+        
+        <p>Vocabulary becomes leverage. "Test for SQL injection" and "create a migration" are precise phrases that produce precise outcomes. Someone without those words can't access the same capability. Is vocabulary the new literacy? Perhaps. And if so, it's teachable.</p>
+        
+        <p>But competence alone isn't enough. When capability is this accessible, the question shifts from "can we build it?" to "should we build it, and who decides?"</p>
+        
+        <hr>
+        
+        <h2>Planning Permission and Building Regulations</h2>
+        
+        <p>Think of it like property development.</p>
+        
+        <p>Planning permission is a human decision. A person with authority looks at what you want to build and says: yes, you can build that. Or: no, not here, not like that. It's a judgment call. It requires context, trust, and accountability.</p>
+        
+        <p>Building regulations are also human decisions. Humans set the standards. Humans decide what "safe" means, what "compliant" looks like, what the criteria are. The regulations don't write themselves.</p>
+        
+        <p>Both are human. Both require oversight. The difference is in how they're applied.</p>
+        
+        <p>Planning permission is granted case by case. A human evaluates context and makes a judgment: yes, you can build this here. That can't be automated, because the judgment depends on things systems can't weigh — organisational need, strategic fit, risk appetite.</p>
+        
+        <p>Building regulations, once set, can be facilitated by systems. Automated checks, validations, deployment gates. An LLM can audit a codebase and catch most vulnerabilities. The capability layer can include safeguards. Systems do the heavy lifting.</p>
+        
+        <p>But the API is the building, not the inspector. It can have smoke alarms and fire doors built in. Someone still needs to test whether the fire doors actually open. Until a real human tries to break in, you don't know whether it works. Automated checks give you confidence. Human verification gives you certainty.</p>
+        
+        <p>The pattern is the same across all governance: humans set the permission, humans set the standards, humans provide the final verification. Systems facilitate enforcement in between. The bookends are always human.</p>
+        
+        <p>Traditional governance collapsed everything into policy documents: here's what you can do, here's how you must do it, now please comply. The new model is more honest about what each party is good at. Humans handle judgment, standards, and accountability. Systems handle scale. The people who provide that human certainty — penetration testers, auditors, red teams — are about to be in very high demand.</p>
+        
+        <hr>
+        
+        <h2>The Trust Gradient</h2>
+        
+        <p>This creates a new stratification. Not "technical" versus "non-technical," but a gradient of trust:</p>
+        
+        <p><strong>Operators</strong> work within capability layers others have built. They're trusted to use the system, not to change it. Someone else granted the planning permission and set the standards; operators work within both.</p>
+        
+        <p><strong>Builders</strong> shape the capability layer. They add endpoints, modify constraints, extend what's possible. They've earned planning permission for their domain. They work within standards set by architects.</p>
+        
+        <p><strong>Architects</strong> design the system itself. They set the standards — the building regulations — that everyone else works within. They decide what the constraints are, and they're accountable for getting them right.</p>
+        
+        <p>This isn't a clean hierarchy. Someone might be an architect in one domain and an operator in another. The gradient is continuous and contextual.</p>
+        
+        <p>What earns movement up? The same messy human factors as always: demonstrated trust, track record, expedient need. But the feedback loop is faster now. Incompetence becomes visible quickly because the gap between intent and execution shrinks.</p>
+        
+        <h2>Agents as Colleagues</h2>
+        
+        <p>Within this structure, how does the work actually get done?</p>
+        
+        <p>"Know when to lead and when to follow": management wisdom that translates directly. Sometimes you direct: set the goal, define constraints, specify the approach. Sometimes you let the agent run: explore the problem space, propose solutions, execute autonomously. The skill is knowing which mode to be in.</p>
+        
+        <p>And teams beat solo agents. A single agent doing everything is like a single employee doing everything: mediocre across the board. Specialists with coordination mechanisms outperform generalists fumbling across domains.</p>
+        
+        <p>This is "agents as colleagues" made concrete. They have roles. They have workflows. The human sets direction and makes judgment calls — grants the planning permission, defines the standards. The agents execute within those constraints. The human verifies the result.</p>
+        
+        <p>Permission. Standards. Execution. Verification. The same pattern, whether you're governing an organisation or managing a Tuesday afternoon.</p>
+        
+        <hr>
+        
+        <h2>The Pioneer Problem</h2>
+        
+        <p>Right now, many of us are in the pioneer phase. Trust is in the individual. Leadership trusts <em>me</em> because of track record and judgment.</p>
+        
+        <p>But this doesn't scale. When you want to empower more people — people without that track record — you can't rely on individual judgment alone. The planning permission process needs to be formalised. The building regulations need to be explicit. The system needs to be safe for people who aren't pioneers.</p>
+        
+        <p>Pioneers build the path. Others will walk it. The path needs to be safe even for those without the pioneer's footing.</p>
+        
+        <p>There's always a frontier, though. Encode one edge, the frontier moves. Humans lead at the edge. The system crystallises yesterday's judgments; humans make tomorrow's.</p>
+        
+        <hr>
+        
+        <h2>The Unlocking</h2>
+        
+        <p>The capability is there to be unlocked. The question is who unlocks it, and under what terms.</p>
+        
+        <p>The people who thrive will be the ones who develop the vocabulary to direct capability, the judgment to grant permission wisely, and the honesty to verify what's been built.</p>
+        
+        <p>The organisations that thrive will be the ones that keep humans where humans matter — setting permission, setting standards, providing the final sign-off — and let systems handle the scale in between.</p>
+        
+        <p>The capability layer is the new foundation. Build on it, or be built upon.</p>
+        
+        <div class="closing">
+            <p>Will Palmer is a product manager building his own agentic systems. Connect on <a href="https://www.linkedin.com/in/willpalmeruk/">LinkedIn</a>.</p>
+        </div>
+    </article>
+</body>
+</html>
