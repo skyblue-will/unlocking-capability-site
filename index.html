@@ -127,7 +127,7 @@
         <p>Agents don't need the accommodation. They mainline into APIs, CLIs, databases. This reveals something that was always true but easy to miss: the interface was never the product. It was the wrapper.</p>
         
         <hr>
-        
+
         <h2>Post-Product</h2>
         
         <p>SaaS products bundle three things: capability (what it does), data (what it knows), and interface (how humans access it). Companies competed on how well they executed the bundle.</p>
@@ -140,13 +140,41 @@
         
         <p>This isn't theoretical. I run agents that manage websites, coordinate tasks, and interact with customers — all through capability layers. I still build interfaces, but they're tools for me: shaped to how my brain works, so I can collaborate with the agents effectively. They're not products to be shipped. They're cognitive prosthetics for one person.</p>
         
-        <p>And there is no settled "product." As the time between intent and execution collapses, what exists is constantly reshaped — an evolving system of capability layers, personal interfaces, and agent orchestration. You don't ship and maintain. You direct and evolve.</p>
+        <p>And there is no settled “product.” As the time between intent and execution collapses, what exists is constantly reshaped — an evolving system of capability layers, personal interfaces, and agent orchestration. You don't ship and maintain. You direct and evolve.</p>
         
         <hr>
+
+        <h2>What Building Means Now</h2>
         
+        <p>If agents write the code, what does a builder actually do?</p>
+        
+        <p>The shift is from procedural to conceptual. Not “how do I write this syntax” but “what exists in the solution space.”</p>
+        
+        <p>A builder needs to know that migrations exist as a concept, that SQL injection is a threat category, that APIs have authentication. They don't need to implement these things. They need to know they're the things to ask for.</p>
+        
+        <p>This makes computer science more important, not less. Not the syntax of any particular language, but the mental models: state, concurrency, authentication versus authorisation, idempotency, race conditions.</p>
+        
+        <p>Vocabulary becomes leverage. “Test for SQL injection” and “create a migration” are precise instructions that produce precise outcomes. Someone without those concepts can't access the same capability.</p>
+        
+        <p>But this isn't about learning a glossary. Knowing the word “idempotency” is useless. Knowing <em>why</em> a retry might corrupt your data — that's the literacy that matters. The shift isn't from code to words. It's from syntax to judgment about systems.</p>
+        
+        <p>And that <em>is</em> teachable. Not as a word list, but as mental models.</p>
+        
+        <hr>
+
+        <h2>The Pioneer Problem</h2>
+        
+        <p>Right now, trust is personal. Leadership trusts <em>me</em> because of track record and judgment.</p>
+        
+        <p>But this doesn't scale. When you want to empower more people, people without that track record, you can't rely on individual judgment. The capability is democratised. The governance isn't. That's the gap.</p>
+        
+        <p>Pioneers build the path. Others will walk it. The path needs to be safe even for those without the pioneer's footing.</p>
+        
+        <hr>
+
         <h2>Planning Permission and Building Regulations</h2>
         
-        <p>When capability is democratised — when anyone with the right mental models can build — the bottleneck moves. It's no longer "can we build this?" It's "should we, and how do we keep it safe?"</p>
+        <p>When capability is democratised — when anyone with the right mental models can build — the bottleneck moves. It's no longer “can we build this?” It's “should we, and how do we keep it safe?”</p>
         
         <p>This is where human oversight concentrates. Not spread across every task — that's bureaucracy. Concentrated in the governance layer: planning permission, building regulations, and inspection. Three roles, all human, each supported differently by automated systems.</p>
         
@@ -169,63 +197,30 @@
         <p>The AI builds. The human secures. That's the full unlock.</p>
         
         <hr>
-        
+
         <h2>The Trust Gradient</h2>
         
-        <p>This creates a new stratification. Not "technical" versus "non-technical," but a gradient of trust:</p>
+        <p>Governance creates a new stratification. Not “technical” versus “non-technical,” but a gradient of trust:</p>
         
-        <p><strong>Operators</strong> work within capability layers others have built. They're trusted to use the system, not to change it. The building regulations protect them from doing damage; the planning permission was granted to someone else.</p>
-        
-        <p><strong>Builders</strong> shape the capability layer. They add endpoints, modify constraints, extend what's possible. They've earned planning permission for their domain. The system still enforces the building regulations around them.</p>
-        
-        <p><strong>Architects</strong> design the system itself. They set the building regulations that everyone else works within. They decide what the constraints are.</p>
+        <p><strong>Operators</strong> work within capability layers others have built. The building regulations protect them; the planning permission was granted to someone else. <strong>Builders</strong> shape the capability layer — they've earned planning permission for their domain. <strong>Architects</strong> design the system itself — they set the building regulations.</p>
         
         <p>This isn't a clean hierarchy. Someone might be an architect in one domain and an operator in another. The gradient is continuous and contextual.</p>
         
-        <p>What earns movement up? The same messy human factors as always: demonstrated trust, track record, necessity.</p>
-        
-        <p>But the feedback loop is faster now. When the gap between intent and execution shrinks, incompetence becomes visible quickly. So does competence. The gradient sorts itself faster than any org chart ever could.</p>
+        <p>When the gap between intent and execution shrinks, incompetence becomes visible quickly. So does competence. The gradient sorts itself faster than any org chart ever could.</p>
         
         <hr>
-        
-        <h2>What Building Means Now</h2>
-        
-        <p>If agents write the code, what does a builder actually do?</p>
-        
-        <p>The shift is from procedural to conceptual. Not "how do I write this syntax" but "what exists in the solution space."</p>
-        
-        <p>A builder needs to know that migrations exist as a concept, that SQL injection is a threat category, that APIs have authentication. They don't need to implement these things. They need to know they're the things to ask for.</p>
-        
-        <p>This makes computer science more important, not less. Not the syntax of any particular language, but the mental models: state, concurrency, authentication versus authorisation, idempotency, race conditions.</p>
-        
-        <p>Vocabulary becomes leverage. "Test for SQL injection" and "create a migration" are precise instructions that produce precise outcomes. Someone without those concepts can't access the same capability.</p>
-        
-        <p>But this isn't about learning a glossary. Knowing the word "idempotency" is useless. Knowing <em>why</em> a retry might corrupt your data — that's the literacy that matters. The shift isn't from code to words. It's from syntax to judgment about systems.</p>
-        
-        <p>And that <em>is</em> teachable. Not as a word list, but as mental models.</p>
-        
-        <hr>
-        
-        <h2>The Pioneer Problem</h2>
-        
-        <p>Right now, trust is personal. Leadership trusts <em>me</em> because of track record and judgment.</p>
-        
-        <p>But this doesn't scale. When you want to empower more people, people without that track record, you can't rely on individual judgment. The planning permission process needs to be formalised. The building regulations need to be encoded. The system needs to be safe for people who aren't pioneers.</p>
-        
-        <p>Pioneers build the path. Others will walk it. The path needs to be safe even for those without the pioneer's footing.</p>
-        
-        <p>There's always a frontier, though. Encode one edge, the frontier moves. Humans lead at the edge. The system crystallises yesterday's judgments; humans make tomorrow's.</p>
-        
-        <hr>
-        
+
         <h2>The Unlocking</h2>
         
         <p>The capability is already there. The models are powerful enough. The APIs exist. The cost is collapsing.</p>
         
-        <p>What's missing is the governance: who gets planning permission, what the building regulations enforce, and who verifies that what was built is safe. Solve that, and you unlock capability for everyone — not just the pioneers.</p>
+        <p>What's missing is the governance. Solve that — who gets planning permission, what the building regulations enforce, who inspects what's built — and you unlock capability for everyone. Not just the pioneers.</p>
         
-        <p>The organisations that move first won't be the ones with the best AI. They'll be the ones that learn to separate permission from regulation, trust humans with the first, and encode the second into their systems.</p>
+        <p>The organisations that move first won't be the ones with the best AI. They'll be the ones that build the governance to use it safely.</p>
         
+        <p>There's always a frontier. Encode one edge, the frontier moves. The system crystallises yesterday's judgments; humans make tomorrow's.</p>
+        
+
         <div class="closing">
             <p>Will Palmer builds and sells agentic systems — AI agents deployed as products for real businesses. He writes about capability, governance, and what happens when the interface disappears. <a href="https://www.linkedin.com/in/willpalmeruk/">LinkedIn</a> · <a href="https://post-product-playbook-site.vercel.app">The Post-Product Playbook</a></p>
         </div>
