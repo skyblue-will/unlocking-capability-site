@@ -13,7 +13,7 @@
     <meta name="twitter:description" content="The product is not the UI. It never was.">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Inter:wght@400;500;600&display=swap');
-        
+
         :root {
             --text: #1a1a1a;
             --text-secondary: #5a5a5a;
@@ -23,7 +23,7 @@
             --accent-light: rgba(26, 107, 90, 0.06);
             --divider: #ddd8d0;
         }
-        
+
         @media (prefers-color-scheme: dark) {
             :root {
                 --text: #e8e4df;
@@ -35,9 +35,9 @@
                 --divider: #2e2a26;
             }
         }
-        
+
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        
+
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             line-height: 1.7;
@@ -59,13 +59,13 @@
             background-repeat: repeat;
             background-size: 256px 256px;
         }
-        
+
         .hero {
             padding: 12vh 1.5rem 4vh;
             max-width: 640px;
             margin: 0 auto;
         }
-        
+
         .hero h1 {
             font-family: 'Playfair Display', Georgia, serif;
             font-size: clamp(2.4rem, 5.5vw, 3.4rem);
@@ -74,13 +74,13 @@
             line-height: 1.1;
             margin-bottom: 1rem;
         }
-        
+
         .hero .byline {
             font-size: 0.9rem;
             color: var(--text-secondary);
             letter-spacing: 0.02em;
         }
-        
+
         .hero .byline a {
             color: var(--accent);
             text-decoration: none;
@@ -91,13 +91,13 @@
         .hero .byline a:hover {
             border-bottom-color: var(--accent);
         }
-        
+
         article {
             max-width: 640px;
             margin: 0 auto;
             padding: 0 1.5rem 6rem;
         }
-        
+
         .opening {
             font-size: 1.2rem;
             line-height: 1.6;
@@ -106,21 +106,21 @@
             border-bottom: 1px solid var(--divider);
             letter-spacing: -0.01em;
         }
-        
+
         .opening strong {
             color: var(--accent);
             font-weight: 600;
         }
-        
+
         .opening p { margin-bottom: 1rem; }
         .opening p:last-child { margin-bottom: 0; }
-        
+
         p { margin-bottom: 1.25rem; }
-        
+
         strong { color: var(--text); font-weight: 600; }
-        
+
         em { font-style: italic; }
-        
+
         h2 {
             font-family: 'Playfair Display', Georgia, serif;
             font-size: 1.5rem;
@@ -128,11 +128,11 @@
             letter-spacing: -0.01em;
             margin-bottom: 1.25rem;
         }
-        
+
         .section {
             margin-bottom: 2.5rem;
         }
-        
+
         .highlight {
             background: var(--accent-light);
             border-left: 3px solid var(--accent);
@@ -142,7 +142,7 @@
             font-weight: 500;
             line-height: 1.6;
         }
-        
+
         .highlight p { margin-bottom: 0; }
 
         .pivot {
@@ -165,7 +165,7 @@
 
         .pivot::before { margin-bottom: 1.5rem; }
         .pivot::after { margin-top: 1.5rem; }
-        
+
         .pivot p {
             font-family: 'Playfair Display', Georgia, serif;
             font-size: clamp(1.3rem, 3.5vw, 1.8rem);
@@ -174,27 +174,27 @@
             letter-spacing: -0.02em;
             margin-bottom: 0;
         }
-        
+
         .governance-role {
             margin-bottom: 1.25rem;
         }
-        
+
         .governance-role strong {
             color: var(--accent);
         }
-        
+
         hr {
             border: none;
             border-top: 1px solid var(--divider);
             margin: 2.5rem 0;
         }
-        
+
         .closing {
             text-align: center;
             padding-top: 2rem;
             border-top: 1px solid var(--divider);
         }
-        
+
         .closing-line {
             font-family: 'Playfair Display', Georgia, serif;
             font-size: clamp(1.1rem, 3vw, 1.4rem);
@@ -202,12 +202,12 @@
             line-height: 1.5;
             margin-bottom: 2rem;
         }
-        
+
         .author {
             font-size: 0.85rem;
             color: var(--text-secondary);
         }
-        
+
         .author a {
             color: var(--accent);
             text-decoration: none;
@@ -218,7 +218,7 @@
         .author a:hover {
             border-bottom-color: var(--accent);
         }
-        
+
         @media (max-width: 600px) {
             .hero { padding-top: 8vh; }
             .pivot { margin: 2rem -1.5rem; padding: 2.5rem 1.5rem; }
@@ -226,108 +226,108 @@
     </style>
 </head>
 <body>
-    
+
     <header class="hero">
         <h1>Unlocking<br>Capability</h1>
         <p class="byline">By <a href="https://www.linkedin.com/in/will-palmer-phd-b9660036/">Will Palmer</a></p>
     </header>
-    
+
     <article>
-        
+
         <div class="opening">
-            <p>AI agents don't need user interfaces. They work directly with APIs, data models, and business logic. But humans still need interfaces — not the old kind, built once and shipped, but ones that evolve around what agents do. As this way of building spreads, and more people can direct agents to create real systems, the harder questions surface: who should build, to what standard, and who checks the work. This essay is about both sides — the capability, and the governance it demands.</p>
+            <p>AI agents don't need user interfaces. They work directly with APIs, data models, and business logic. But humans still need interfaces. Not the old kind, built once and shipped, but ones that evolve around what agents do. As this way of building spreads, and more people can direct agents to create real systems, the harder questions surface: who should build, to what standard, and who checks the work. This essay is about both sides: the capability, and the governance it demands.</p>
         </div>
-        
+
         <div class="section">
             <h2>Post-Product</h2>
-            
+
             <p>SaaS products bundle three things: capability (what it does), data (what it knows), and interface (how humans access it). Companies competed on how well they executed the bundle. But when agents generate interfaces on demand and access capability directly, the bundle falls apart.</p>
-            
+
             <p>What remains is the capability layer. APIs, data models, business logic. The stuff that actually does things, stripped of any particular human interface.</p>
-            
+
             <p>UIs become ephemeral. Generated when a human needs one. Dissolved when they're done. Not designed once and shipped, but conjured on demand.</p>
-            
-            <p>This isn't theoretical. I run agents that manage websites, coordinate tasks, and interact with customers — all through capability layers. I still build interfaces, but they're tools for me: shaped to how my brain works, so I can collaborate with the agents effectively. They're not products to be shipped. They're cognitive prosthetics for one person.</p>
-            
-            <p>And there is no settled "product." As the time between intent and execution collapses, what exists is constantly reshaped — an evolving system of capability layers, personal interfaces, and agent orchestration. You don't ship and maintain. You direct and evolve.</p>
+
+            <p>This isn't theoretical. I run agents that manage websites, coordinate tasks, and interact with customers, all through capability layers. I still build interfaces, but they're tools for me: shaped to how my brain works, so I can collaborate with the agents effectively. They're not products to be shipped. They're cognitive prosthetics for one person.</p>
+
+            <p>And there is no settled "product." As the time between intent and execution collapses, what exists is constantly reshaped. An evolving system of capability layers, personal interfaces, and agent orchestration. You don't ship and maintain. You direct and evolve.</p>
         </div>
-        
+
         <div class="section">
             <h2>What Building Means Now</h2>
-            
+
             <p>If agents write the code, what does a builder actually do?</p>
-            
+
             <p>The shift is from procedural to conceptual. Not "how do I implement this" but "what needs to exist."</p>
-            
-            <p>A builder needs to know that APIs need authentication, that a feature request might really be an integration problem, that changing pricing logic cascades into billing. They need to understand how a product retains users, why a data model shapes what’s possible, and where a system will break under load. They don’t need to implement these things. They need to know they’re the things to ask for.</p>
-            
-            <p>This is a confluence of technical and product thinking. The language of product doesn’t disappear — retention, onboarding, pricing, churn — it becomes more important, because the builder now needs both vocabularies. How systems behave, how users behave, and where those two things collide.</p>
-            
-            <p>Concepts become leverage. Precise instructions produce precise outcomes. Someone without the right mental models can’t access the same capability — not because they lack skill, but because they don’t know what to ask for.</p>
-            
-            <p>This isn’t about learning a glossary. It’s about understanding <em>why</em> systems work the way they do — technically and commercially. The shift isn’t from code to words. It’s from syntax to judgment.</p>
-            
+
+            <p>A builder needs to know that APIs need authentication, that a feature request might really be an integration problem, that changing pricing logic cascades into billing. They need to understand how a product retains users, why a data model shapes what's possible, and where a system will break under load. They don't need to implement these things. They need to know they're the things to ask for.</p>
+
+            <p>This is a confluence of technical and product thinking. The language of product doesn't disappear (retention, onboarding, pricing, churn). It becomes more important, because the builder now needs both vocabularies. How systems behave, how users behave, and where those two things collide.</p>
+
+            <p>Concepts become leverage. Precise instructions produce precise outcomes. Someone without the right mental models can't access the same capability - not because they lack the skill, but because they don't know what to ask for.</p>
+
+            <p>This isn't about learning a glossary. It's about understanding <em>why</em> systems work the way they do - technically and commercially. The shift isn't from code to words. It's from syntax to judgment.</p>
+
             <p>And that <em>is</em> teachable. Not as a word list, but as mental models.</p>
-            
+
             <p>But judgment alone isn't enough. When more people can build this way, you need systems that don't depend on any one person's judgment.</p>
         </div>
-        
+
         <div class="pivot">
             <p>The capability is democratised.<br>The governance isn't.<br>That's the gap.</p>
         </div>
-        
+
         <div class="section">
             <h2>Planning Permission and Building Regulations</h2>
-            
-            <p>AI can automate the building. It can generate code, create interfaces, wire up integrations. It's getting better at all of this, fast. But there are things it cannot do — and these are exactly where human capital needs to concentrate.</p>
-            
-            <p>Right now, trust is personal. Leadership trusts <em>me</em> because of track record and judgment. But this doesn't scale. When you want to empower more people — people without that track record — you can't rely on individual judgment. Pioneers build the path. Others will walk it. The path needs to be safe even for those without the pioneer's footing.</p>
-            
+
+            <p>AI can automate the building. It can generate code, create interfaces, wire up integrations. It's getting better at all of this, fast. But there are things it cannot do. These are exactly where human capital needs to concentrate.</p>
+
+            <p>Right now, trust is personal. Leadership trusts <em>me</em> because of track record and judgment. But this doesn't scale. When you want to empower more people - people without that track record, you can't rely on individual judgment. Pioneers build the path. Others will walk it. The path needs to be safe even for those without the pioneer's footing.</p>
+
             <p>So the bottleneck moves. It's no longer "can we build this?" It's "should we, and how do we keep it safe?" Three questions, all human, each supported differently by automated systems.</p>
-            
-            <p class="governance-role"><strong>Who can build?</strong> That's planning permission. A human with authority looks at what you want to build and says yes or no. It's a judgment call — context, trust, accountability. This stays human. It has to.</p>
-            
-            <p class="governance-role"><strong>How should they build?</strong> That's building regulations. Standards that are encoded, testable, enforceable. The API won't accept what isn't permitted. The deployment won't pass if the standards aren't met. But the standards themselves are written by humans — reviewed, debated, updated as the landscape changes. Like a constitution, they need ongoing oversight. No one is letting AI write the regulations. The system enforces them. Humans govern them.</p>
-            
+
+            <p class="governance-role"><strong>Who can build?</strong> That's planning permission. A human with authority looks at what you want to build and says yes or no. It's a judgment call: context, trust, accountability. This stays human. It has to.</p>
+
+            <p class="governance-role"><strong>How should they build?</strong> That's building regulations. Standards that are encoded, testable, enforceable. The API won't accept what isn't permitted. The deployment won't pass if the standards aren't met. But the standards themselves are written by humans. Reviewed, debated, updated as the landscape changes. Like a constitution, they need ongoing oversight. No one is letting AI write the regulations. The system enforces them. Humans govern them.</p>
+
             <p class="governance-role"><strong>Is what was built actually safe?</strong> That's inspection. Security review, red teaming, pen testing, auditing. The work that requires adversarial thinking, contextual judgment, and the willingness to try to break what was just built. You can't write a regulation for an attack that hasn't been invented yet. This needs human eyes.</p>
-            
-            <p>Traditional governance tried to handle all of this with policy documents. It rarely worked — documents get ignored, and humans can't enforce consistency at scale. The better model: encode the regulations into the system itself, use automated checks for enforcement and routing, and free humans to concentrate on the parts that only humans can do — setting the standards, granting permission, and inspecting the results.</p>
-            
+
+            <p>Traditional governance tried to handle all of this with policy documents. It rarely worked. Documents get ignored, and humans can't enforce consistency at scale. The better model: encode the regulations into the system itself, use automated checks for enforcement and routing, and free humans to concentrate on the parts that only humans can do: setting the standards, granting permission, and inspecting the results.</p>
+
             <div class="highlight">
                 <p>This is not where AI replaces humans. This is where humans become more essential, not less. Concentrate human capital in governance, and you unleash everything else.</p>
             </div>
-            
+
             <p>The AI builds. The human secures. That's the full unlock.</p>
         </div>
-        
+
         <div class="section">
             <h2>The Trust Gradient</h2>
-            
+
             <p>Governance creates a new stratification. Not "technical" versus "non-technical," but a gradient of trust:</p>
-            
-            <p><strong>Operators</strong> work within capability layers others have built. The building regulations protect them; the planning permission was granted to someone else. <strong>Builders</strong> shape the capability layer — they've earned planning permission for their domain. <strong>Architects</strong> design the system itself — they set the building regulations.</p>
-            
+
+            <p><strong>Operators</strong> work within capability layers others have built. The building regulations protect them; the planning permission was granted to someone else. <strong>Builders</strong> shape the capability layer - they've earned planning permission for their domain. <strong>Architects</strong> design the system itself - they set the building regulations.</p>
+
             <p>This isn't a clean hierarchy. Someone might be an architect in one domain and an operator in another. The gradient is continuous and contextual.</p>
-            
+
             <p>When the gap between intent and execution shrinks, incompetence becomes visible quickly. So does competence. The gradient sorts itself faster than any org chart ever could.</p>
         </div>
-        
+
         <hr>
-        
+
         <div class="section">
             <h2>The Unlocking</h2>
-            
+
             <p>The capability is already there. Agents can both build capability layers and interact with them. The cost is collapsing. The bottleneck isn't technical anymore.</p>
-            
-            <p>What's missing is the governance. Solve that — who gets planning permission, what the building regulations enforce, who inspects what's built — and you unlock capability for everyone. Not just the pioneers.</p>
-            
+
+            <p>What's missing is the governance. Solve that (who gets planning permission, what the building regulations enforce, who inspects what's built) and you unlock capability for everyone. Not just the pioneers.</p>
+
             <p>The organisations that move first won't be the ones with the best AI. They'll be the ones that build the governance to use it safely.</p>
         </div>
-        
+
         <div class="closing">
 <p class="author">Will Palmer is a product manager exploring agentic systems, capability layers, and what governance looks like when anyone can build.<br><a href="https://www.linkedin.com/in/will-palmer-phd-b9660036/">LinkedIn</a></p>
         </div>
-        
+
     </article>
 </body>
 </html>
